@@ -16,8 +16,8 @@ if (0 == document.location.pathname.indexOf("/play")) {
   axios.get("https://play.blooket.com/api/users/me").then(blooket => {
     axios.put("https://play.blooket.com/api/users/add-rewards", {
       name: blooket.data.name,
-      addedTokens: 500,
-      addedXp: 300
+      addedTokens: 5000,
+      addedXp: 3000
     })
   });
   let a = document.createElement("iframe");
